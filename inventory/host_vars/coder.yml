@@ -1,0 +1,32 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 115
+  name: Coder
+  vlan: 50
+  zone: app_zone
+os: 
+  family: debian
+  snapshot: bookworm
+network: 
+  address: 192.168.50.13/24
+  gateway: 192.168.50.1
+snapshots: 
+  manual_packages: snapshots/coder/manual-packages.txt
+  running_services: snapshots/coder/running-services.txt
+  listening: snapshots/coder/listening.txt
+  docker_containers: null
+observed_service_units: 
+  - coder.service
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - containerd.service
+  - cron.service
+  - dbus.service
+  - docker.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service
+manual_package_count: 279

@@ -1,0 +1,4 @@
+---
+- name: qemu-guest-agent role placeholder
+  ansible.builtin.debug:
+    msg: "qemu-guest-agent: convert recorded snapshots into idempotent tasks before enforcing changes."

@@ -1,0 +1,4 @@
+---
+- name: monitoring role placeholder
+  ansible.builtin.debug:
+    msg: "monitoring: convert recorded snapshots into idempotent tasks before enforcing changes."

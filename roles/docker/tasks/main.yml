@@ -1,0 +1,4 @@
+---
+- name: docker role placeholder
+  ansible.builtin.debug:
+    msg: "docker: convert recorded snapshots into idempotent tasks before enforcing changes."

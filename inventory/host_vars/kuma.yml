@@ -1,0 +1,32 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 113
+  name: Kuma
+  vlan: 60
+  zone: monitor_zone
+os: 
+  family: debian
+  snapshot: bookworm
+network: 
+  address: 192.168.60.3/24
+  gateway: 192.168.60.1
+snapshots: 
+  manual_packages: snapshots/kuma/manual-packages.txt
+  running_services: snapshots/kuma/running-services.txt
+  listening: snapshots/kuma/listening.txt
+  docker_containers: snapshots/kuma/docker-ps.txt
+observed_service_units: 
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - containerd.service
+  - cron.service
+  - dbus.service
+  - docker.service
+  - nezha-agent.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service
+manual_package_count: 277

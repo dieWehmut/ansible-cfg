@@ -1,0 +1,13 @@
+pve: 
+  host: dieSehnsucht
+  vmid: 198
+  name: DockerHost
+  vlan: 50
+  zone: app_zone
+os: 
+  family: debian
+  snapshot: bookworm
+network: 
+  address: 192.168.50.14/24
+snapshots: 
+  note: "qemu guest agent reported OS and network only; package snapshot not collected yet"

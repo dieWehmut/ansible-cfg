@@ -1,0 +1,4 @@
+---
+- name: common role placeholder
+  ansible.builtin.debug:
+    msg: "common: convert recorded snapshots into idempotent tasks before enforcing changes."
