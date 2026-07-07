@@ -1,0 +1,4 @@
+# command: if command -v docker >/dev/null 2>&1; then docker compose ls 2>/dev/null || true; fi; if command -v docker-compose >/dev/null 2>&1; then docker-compose ps 2>/dev/null || true; fi
+
+NAME                STATUS              CONFIG FILES
+plex                running(1)          /opt/plex/docker-compose.yml

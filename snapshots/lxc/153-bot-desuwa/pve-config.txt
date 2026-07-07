@@ -1,0 +1,13 @@
+
+arch: amd64
+cores: 4
+features: nesting=1
+hostname: bot-desuwa
+memory: 4096
+nameserver: 8.8.8.8 1.1.1.1
+net0: name=eth0,bridge=vmbr0,firewall=1,gw=192.168.50.1,hwaddr=BC:24:11:9C:F9:A2,ip=192.168.50.5/24,tag=50,type=veth
+onboot: 1
+ostype: debian
+rootfs: local-lvm:vm-153-disk-0,size=20G
+swap: 4096
+unprivileged: 1

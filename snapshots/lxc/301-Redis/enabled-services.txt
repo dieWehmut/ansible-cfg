@@ -1,0 +1,17 @@
+# command: systemctl list-unit-files --type=service --state=enabled --no-pager --no-legend 2>/dev/null || true
+
+cron.service                        enabled enabled
+e2scrub_reap.service                enabled enabled
+ifupdown-wait-online.service        enabled enabled
+networking.service                  enabled enabled
+nezha-agent.service                 enabled enabled
+nftables.service                    enabled enabled
+postfix-resolvconf.service          enabled enabled
+postfix.service                     enabled enabled
+proxmox-regenerate-snakeoil.service enabled enabled
+redis-server.service                enabled enabled
+ssh.service                         enabled enabled
+systemd-network-generator.service   enabled enabled
+systemd-pstore.service              enabled enabled
+systemd-sysext.service              enabled enabled
+systemd-timesyncd.service           enabled enabled

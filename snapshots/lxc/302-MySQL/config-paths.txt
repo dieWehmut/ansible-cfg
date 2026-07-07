@@ -1,0 +1,28 @@
+# command: for d in /etc/nginx /etc/caddy /etc/apache2 /etc/postgresql /etc/mysql /etc/redis /etc/docker /etc/containers /opt /srv /var/www; do [ -e "$d" ] && echo "## $d" && find "$d" -maxdepth 3 -mindepth 1 -printf "%y %p\n" 2>/dev/null | sort | head -300; done
+
+## /etc/mysql
+d /etc/mysql/conf.d
+d /etc/mysql/mariadb.conf.d
+f /etc/mysql/conf.d/mysql.cnf
+f /etc/mysql/conf.d/mysqldump.cnf
+f /etc/mysql/debian-start
+f /etc/mysql/debian.cnf
+f /etc/mysql/mariadb.cnf
+f /etc/mysql/mariadb.conf.d/50-client.cnf
+f /etc/mysql/mariadb.conf.d/50-mysql-clients.cnf
+f /etc/mysql/mariadb.conf.d/50-mysqld_safe.cnf
+f /etc/mysql/mariadb.conf.d/50-server.cnf
+f /etc/mysql/mariadb.conf.d/60-galera.cnf
+f /etc/mysql/mariadb.conf.d/provider_bzip2.cnf
+f /etc/mysql/mariadb.conf.d/provider_lz4.cnf
+f /etc/mysql/mariadb.conf.d/provider_lzma.cnf
+f /etc/mysql/mariadb.conf.d/provider_lzo.cnf
+f /etc/mysql/mariadb.conf.d/provider_snappy.cnf
+f /etc/mysql/my.cnf.fallback
+l /etc/mysql/my.cnf
+## /opt
+d /opt/nezha
+d /opt/nezha/agent
+f /opt/nezha/agent/config.yml
+f /opt/nezha/agent/nezha-agent
+## /srv

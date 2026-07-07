@@ -1,0 +1,9 @@
+# command: df -hT 2>/dev/null || df -h 2>/dev/null || true
+
+Filesystem                       Type      Size  Used Avail Use% Mounted on
+/dev/mapper/pve-vm--112--disk--0 ext4      306G  109G  185G  37% /
+none                             tmpfs     492K  4.0K  488K   1% /dev
+udev                             devtmpfs   16G     0   16G   0% /dev/tty
+tmpfs                            tmpfs      16G  1.1M   16G   1% /dev/shm
+tmpfs                            tmpfs     6.3G  132K  6.3G   1% /run
+tmpfs                            tmpfs     5.0M     0  5.0M   0% /run/lock

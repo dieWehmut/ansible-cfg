@@ -1,0 +1,5 @@
+# command: cat /etc/resolv.conf 2>/dev/null || true
+
+search d10t
+nameserver 127.0.0.1
+nameserver ::1

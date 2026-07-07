@@ -1,0 +1,12 @@
+
+arch: amd64
+cores: 4
+features: nesting=1
+hostname: Coolify
+memory: 8192
+net0: name=eth0,bridge=vmbr0,firewall=1,gw=192.168.100.1,hwaddr=BC:24:11:A4:27:5E,ip=192.168.100.3/24,tag=100,type=veth
+onboot: 0
+ostype: debian
+rootfs: local-lvm:vm-106-disk-0,size=100G
+swap: 8192
+unprivileged: 1

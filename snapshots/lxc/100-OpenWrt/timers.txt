@@ -1,0 +1,2 @@
+# command: systemctl list-timers --all --no-pager 2>/dev/null || true
+

@@ -1,0 +1,51 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 101
+  name: Nginx
+  initial_status: running
+  final_status: running
+  started_for_inventory: false
+  vlan: 30
+  zone: nginx_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.30.2/24
+  observed_address: 192.168.30.2/24
+  gateway: 192.168.30.1
+snapshots: 
+  root: snapshots/lxc/101-Nginx
+  pve_config: snapshots/lxc/101-Nginx/pve-config.txt
+  os_release: snapshots/lxc/101-Nginx/os-release.txt
+  packages: snapshots/lxc/101-Nginx/packages.txt
+  manual_packages: snapshots/lxc/101-Nginx/manual-packages.txt
+  running_services: snapshots/lxc/101-Nginx/running-services.txt
+  enabled_services: snapshots/lxc/101-Nginx/enabled-services.txt
+  listening: snapshots/lxc/101-Nginx/listening.txt
+  docker_containers: null
+  config_paths: snapshots/lxc/101-Nginx/config-paths.txt
+counts: 
+  manual_packages: 272
+  installed_packages: 276
+  running_services: 14
+  enabled_services: 17
+  listening_sockets: 5
+  docker_containers: 0
+  docker_images: 0
+observed_service_units: 
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - cron.service
+  - dbus.service
+  - nezha-agent-cca8bee.service
+  - nezha-agent.service
+  - nginx-ui.service
+  - nginx.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

@@ -1,0 +1,8 @@
+# command: ss -lntup 2>/dev/null || netstat -lntup 2>/dev/null || true
+
+Netid State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                               
+tcp   LISTEN 0      511        127.0.0.1:6379      0.0.0.0:*    users:(("redis-server",pid=129,fd=6))
+tcp   LISTEN 0      100        127.0.0.1:25        0.0.0.0:*    users:(("master",pid=294,fd=13))     
+tcp   LISTEN 0      100            [::1]:25           [::]:*    users:(("master",pid=294,fd=14))     
+tcp   LISTEN 0      511            [::1]:6379         [::]:*    users:(("redis-server",pid=129,fd=7))
+tcp   LISTEN 0      4096               *:22              *:*    users:(("sshd",pid=142,fd=3),("systemd",pid=1,fd=38))

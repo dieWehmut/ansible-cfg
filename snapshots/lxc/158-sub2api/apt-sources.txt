@@ -1,0 +1,11 @@
+# command: find /etc/apt -maxdepth 3 -type f \( -name "sources.list" -o -name "*.list" -o -name "*.sources" \) -print -exec sed -n "1,160p" {} \; 2>/dev/null || true
+
+/etc/apt/sources.list
+deb http://deb.debian.org/debian bookworm main contrib
+
+deb http://deb.debian.org/debian bookworm-updates main contrib
+
+deb http://security.debian.org bookworm-security main contrib
+
+/etc/apt/sources.list.d/docker.list
+deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian bookworm stable

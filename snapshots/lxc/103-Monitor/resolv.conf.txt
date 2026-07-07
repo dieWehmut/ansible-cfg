@@ -1,0 +1,6 @@
+# command: cat /etc/resolv.conf 2>/dev/null || true
+
+# --- BEGIN PVE ---
+nameserver 1.1.1.1
+nameserver 8.8.8.8
+# --- END PVE ---

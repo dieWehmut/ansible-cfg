@@ -1,0 +1,54 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 112
+  name: CodeRunner
+  initial_status: running
+  final_status: running
+  started_for_inventory: false
+  vlan: 50
+  zone: app_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.50.11/24
+  observed_address: 192.168.50.11/24
+  gateway: 192.168.50.1
+snapshots: 
+  root: snapshots/lxc/112-CodeRunner
+  pve_config: snapshots/lxc/112-CodeRunner/pve-config.txt
+  os_release: snapshots/lxc/112-CodeRunner/os-release.txt
+  packages: snapshots/lxc/112-CodeRunner/packages.txt
+  manual_packages: snapshots/lxc/112-CodeRunner/manual-packages.txt
+  running_services: snapshots/lxc/112-CodeRunner/running-services.txt
+  enabled_services: snapshots/lxc/112-CodeRunner/enabled-services.txt
+  listening: snapshots/lxc/112-CodeRunner/listening.txt
+  docker_containers: null
+  config_paths: snapshots/lxc/112-CodeRunner/config-paths.txt
+counts: 
+  manual_packages: 381
+  installed_packages: 1507
+  running_services: 17
+  enabled_services: 21
+  listening_sockets: 8
+  docker_containers: 0
+  docker_images: 4
+observed_service_units: 
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - containerd.service
+  - cron.service
+  - dbus.service
+  - docker.service
+  - epmd.service
+  - nezha-agent.service
+  - postfix@-.service
+  - postgresql@15-main.service
+  - sandkasten-api.service
+  - sandkasten-laeufer.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

@@ -1,0 +1,50 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 154
+  name: pan
+  initial_status: stopped
+  final_status: stopped
+  started_for_inventory: true
+  vlan: 80
+  zone: storage_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.80.3/24
+  observed_address: 192.168.80.3/24
+  gateway: 192.168.80.1
+snapshots: 
+  root: snapshots/lxc/154-pan
+  pve_config: snapshots/lxc/154-pan/pve-config.txt
+  os_release: snapshots/lxc/154-pan/os-release.txt
+  packages: snapshots/lxc/154-pan/packages.txt
+  manual_packages: snapshots/lxc/154-pan/manual-packages.txt
+  running_services: snapshots/lxc/154-pan/running-services.txt
+  enabled_services: snapshots/lxc/154-pan/enabled-services.txt
+  listening: snapshots/lxc/154-pan/listening.txt
+  docker_containers: snapshots/lxc/154-pan/docker-ps.txt
+  config_paths: snapshots/lxc/154-pan/config-paths.txt
+counts: 
+  manual_packages: 275
+  installed_packages: 306
+  running_services: 13
+  enabled_services: 17
+  listening_sockets: 7
+  docker_containers: 1
+  docker_images: 1
+observed_service_units: 
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - containerd.service
+  - cron.service
+  - dbus.service
+  - docker.service
+  - nezha-agent.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

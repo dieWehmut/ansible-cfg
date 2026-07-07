@@ -1,0 +1,15 @@
+# command: ss -lntup 2>/dev/null || netstat -lntup 2>/dev/null || true
+
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                               
+udp   UNCONN 0      0          127.0.0.1:8125       0.0.0.0:*    users:(("netdata",pid=330,fd=135))                   
+udp   UNCONN 0      0              [::1]:8125          [::]:*    users:(("netdata",pid=330,fd=134))                   
+tcp   LISTEN 0      100        127.0.0.1:25         0.0.0.0:*    users:(("master",pid=326,fd=13))                     
+tcp   LISTEN 0      4096       127.0.0.1:8125       0.0.0.0:*    users:(("netdata",pid=330,fd=137))                   
+tcp   LISTEN 0      4096       127.0.0.1:41761      0.0.0.0:*    users:(("containerd",pid=131,fd=8))                  
+tcp   LISTEN 0      4096         0.0.0.0:19999      0.0.0.0:*    users:(("netdata",pid=330,fd=6))                     
+tcp   LISTEN 0      4096         0.0.0.0:8008       0.0.0.0:*    users:(("docker-proxy",pid=771,fd=4))                
+tcp   LISTEN 0      4096           [::1]:8125          [::]:*    users:(("netdata",pid=330,fd=136))                   
+tcp   LISTEN 0      100            [::1]:25            [::]:*    users:(("master",pid=326,fd=14))                     
+tcp   LISTEN 0      4096               *:22               *:*    users:(("sshd",pid=143,fd=3),("systemd",pid=1,fd=40))
+tcp   LISTEN 0      4096            [::]:19999         [::]:*    users:(("netdata",pid=330,fd=7))                     
+tcp   LISTEN 0      4096            [::]:8008          [::]:*    users:(("docker-proxy",pid=778,fd=4))                

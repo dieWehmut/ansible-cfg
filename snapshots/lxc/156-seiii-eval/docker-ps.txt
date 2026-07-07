@@ -1,0 +1,4 @@
+# command: if command -v docker >/dev/null 2>&1; then docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}" 2>/dev/null; fi || true
+
+NAMES                IMAGE                   STATUS          PORTS
+seiii-eval-backend   seiii-eval-backend:18   Up 14 seconds   0.0.0.0:8000->8000/tcp, :::8000->8000/tcp

@@ -1,0 +1,36 @@
+# command: for d in /etc/nginx /etc/caddy /etc/apache2 /etc/postgresql /etc/mysql /etc/redis /etc/docker /etc/containers /opt /srv /var/www; do [ -e "$d" ] && echo "## $d" && find "$d" -maxdepth 3 -mindepth 1 -printf "%y %p\n" 2>/dev/null | sort | head -300; done
+
+## /etc/nginx
+d /etc/nginx/sites-available
+d /etc/nginx/sites-enabled
+d /etc/nginx/snippets
+f /etc/nginx/fastcgi.conf
+f /etc/nginx/fastcgi_params
+f /etc/nginx/koi-utf
+f /etc/nginx/koi-win
+f /etc/nginx/mime.types
+f /etc/nginx/nginx.conf
+f /etc/nginx/proxy_params
+f /etc/nginx/scgi_params
+f /etc/nginx/sites-available/default
+f /etc/nginx/snippets/fastcgi-php.conf
+f /etc/nginx/snippets/snakeoil.conf
+f /etc/nginx/uwsgi_params
+f /etc/nginx/win-utf
+l /etc/nginx/sites-enabled/default
+## /etc/apache2
+d /etc/apache2/conf-available
+f /etc/apache2/conf-available/javascript-common.conf
+## /etc/docker
+## /opt
+d /opt/containerd
+d /opt/containerd/bin
+d /opt/containerd/lib
+d /opt/nezha
+d /opt/nezha/agent
+f /opt/nezha/agent/config.yml
+f /opt/nezha/agent/nezha-agent
+## /srv
+## /var/www
+d /var/www/html
+f /var/www/html/index.nginx-debian.html

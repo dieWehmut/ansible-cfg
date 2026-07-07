@@ -1,0 +1,8 @@
+# command: ss -lntup 2>/dev/null || netstat -lntup 2>/dev/null || true
+
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                              
+tcp   LISTEN 0      2048         0.0.0.0:8000       0.0.0.0:*    users:(("python",pid=134,fd=13))    
+tcp   LISTEN 0      4096       127.0.0.1:34459      0.0.0.0:*    users:(("containerd",pid=138,fd=10))
+tcp   LISTEN 0      100        127.0.0.1:25         0.0.0.0:*    users:(("master",pid=323,fd=13))    
+tcp   LISTEN 0      100            [::1]:25            [::]:*    users:(("master",pid=323,fd=14))    
+tcp   LISTEN 0      4096               *:22               *:*    users:(("sshd",pid=142,fd=3),("systemd",pid=1,fd=39))

@@ -1,0 +1,9 @@
+# command: ip -brief address 2>/dev/null || ip addr 2>/dev/null || true
+
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0@if332       UP             192.168.50.10/24 fe80::be24:11ff:fe9a:2a63/64 
+br-4efc50e45a9c  UP             172.18.0.1/16 fe80::38ca:f0ff:febf:fe9c/64 
+docker0          DOWN           172.17.0.1/16 
+veth881a915@if2  UP             fe80::bca7:1cff:fe2c:d446/64 
+veth5a34ff4@if2  UP             fe80::208b:5ff:feb8:798f/64 
+vethe07a5ee@if2  UP             fe80::a4be:83ff:fe97:2900/64 

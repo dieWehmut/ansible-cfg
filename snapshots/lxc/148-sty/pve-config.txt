@@ -1,0 +1,12 @@
+
+arch: amd64
+cores: 2
+features: nesting=1
+hostname: sty
+memory: 4096
+net0: name=eth0,bridge=vmbr0,firewall=1,gw=192.168.66.1,hwaddr=BC:24:11:30:5E:3F,ip=192.168.66.3/24,tag=66,type=veth
+onboot: 0
+ostype: debian
+rootfs: local-lvm:vm-148-disk-0,size=40G
+swap: 4096
+unprivileged: 1

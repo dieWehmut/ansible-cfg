@@ -1,0 +1,7 @@
+# command: ss -lntup 2>/dev/null || netstat -lntup 2>/dev/null || true
+
+Netid State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                               
+tcp   LISTEN 0      100        127.0.0.1:25        0.0.0.0:*    users:(("master",pid=325,fd=13))     
+tcp   LISTEN 0      4096         0.0.0.0:8080      0.0.0.0:*    users:(("docker-proxy",pid=710,fd=8))
+tcp   LISTEN 0      100            [::1]:25           [::]:*    users:(("master",pid=325,fd=14))     
+tcp   LISTEN 0      4096               *:22              *:*    users:(("sshd",pid=138,fd=3),("systemd",pid=1,fd=40))

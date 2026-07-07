@@ -1,0 +1,9 @@
+# command: if command -v docker >/dev/null 2>&1; then docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}" 2>/dev/null; fi || true
+
+NAMES                 IMAGE                  STATUS                    PORTS
+qeedu-gateway         deploy-gateway         Up 12 seconds             0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp
+qeedu-user-services   deploy-user-services   Up 12 seconds             50051/tcp
+qeedu-chat            deploy-ai-chat         Up 14 seconds             50054/tcp
+qeedu-mysql           mysql:8                Up 14 seconds (healthy)   0.0.0.0:3306->3306/tcp, [::]:3306->3306/tcp, 33060/tcp
+qeedu-copilot         deploy-ai-copilot      Up 14 seconds             50053/tcp
+qeedu-sandbox         deploy-sandbox         Up 14 seconds             50052/tcp

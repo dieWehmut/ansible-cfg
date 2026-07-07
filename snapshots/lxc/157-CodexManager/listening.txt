@@ -1,0 +1,12 @@
+# command: ss -lntup 2>/dev/null || netstat -lntup 2>/dev/null || true
+
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                                               
+tcp   LISTEN 0      128        127.0.0.1:38031      0.0.0.0:*    users:(("codexmanager-se",pid=366,fd=16))            
+tcp   LISTEN 0      100        127.0.0.1:25         0.0.0.0:*    users:(("master",pid=341,fd=13))                     
+tcp   LISTEN 0      4096       127.0.0.1:48761      0.0.0.0:*    users:(("codexmanager-we",pid=367,fd=9))             
+tcp   LISTEN 0      4096       127.0.0.1:48760      0.0.0.0:*    users:(("codexmanager-se",pid=366,fd=9))             
+tcp   LISTEN 0      511          0.0.0.0:80         0.0.0.0:*    users:(("nginx",pid=177,fd=5),("nginx",pid=175,fd=5))
+tcp   LISTEN 0      4096           [::1]:48760         [::]:*    users:(("codexmanager-se",pid=366,fd=20))            
+tcp   LISTEN 0      4096           [::1]:48761         [::]:*    users:(("codexmanager-we",pid=367,fd=10))            
+tcp   LISTEN 0      100            [::1]:25            [::]:*    users:(("master",pid=341,fd=14))                     
+tcp   LISTEN 0      4096               *:22               *:*    users:(("sshd",pid=137,fd=3),("systemd",pid=1,fd=39))

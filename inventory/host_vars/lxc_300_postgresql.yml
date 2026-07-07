@@ -1,0 +1,49 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 300
+  name: PostgreSQL
+  initial_status: stopped
+  final_status: stopped
+  started_for_inventory: true
+  vlan: 90
+  zone: db_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.90.2/24
+  observed_address: 192.168.90.2/24
+  gateway: 192.168.90.1
+snapshots: 
+  root: snapshots/lxc/300-PostgreSQL
+  pve_config: snapshots/lxc/300-PostgreSQL/pve-config.txt
+  os_release: snapshots/lxc/300-PostgreSQL/os-release.txt
+  packages: snapshots/lxc/300-PostgreSQL/packages.txt
+  manual_packages: snapshots/lxc/300-PostgreSQL/manual-packages.txt
+  running_services: snapshots/lxc/300-PostgreSQL/running-services.txt
+  enabled_services: snapshots/lxc/300-PostgreSQL/enabled-services.txt
+  listening: snapshots/lxc/300-PostgreSQL/listening.txt
+  docker_containers: null
+  config_paths: snapshots/lxc/300-PostgreSQL/config-paths.txt
+counts: 
+  manual_packages: 269
+  installed_packages: 285
+  running_services: 12
+  enabled_services: 15
+  listening_sockets: 5
+  docker_containers: 0
+  docker_images: 0
+observed_service_units: 
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - cron.service
+  - dbus.service
+  - nezha-agent.service
+  - postfix@-.service
+  - postgresql@15-main.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

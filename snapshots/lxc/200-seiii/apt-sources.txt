@@ -1,0 +1,9 @@
+# command: find /etc/apt -maxdepth 3 -type f \( -name "sources.list" -o -name "*.list" -o -name "*.sources" \) -print -exec sed -n "1,160p" {} \; 2>/dev/null || true
+
+/etc/apt/sources.list
+deb http://deb.debian.org/debian bookworm main contrib
+
+deb http://deb.debian.org/debian bookworm-updates main contrib
+
+deb http://security.debian.org bookworm-security main contrib
+

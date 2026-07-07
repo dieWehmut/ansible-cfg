@@ -1,0 +1,13 @@
+# command: systemctl list-timers --all --no-pager 2>/dev/null || true
+
+NEXT                        LEFT          LAST                        PASSED              UNIT                         ACTIVATES
+Tue 2026-07-07 12:08:19 UTC 11s left      Mon 2026-05-25 06:02:47 UTC 1 month 12 days ago apt-daily-upgrade.timer      apt-daily-upgrade.service
+Tue 2026-07-07 12:22:56 UTC 14min left    -                           -                   systemd-tmpfiles-clean.timer systemd-tmpfiles-clean.service
+Tue 2026-07-07 14:32:41 UTC 2h 24min left Sun 2026-05-24 12:50:10 UTC 1 month 13 days ago man-db.timer                 man-db.service
+Tue 2026-07-07 17:20:40 UTC 5h 12min left Mon 2026-05-25 06:39:47 UTC 1 month 12 days ago apt-daily.timer              apt-daily.service
+Wed 2026-07-08 00:00:00 UTC 11h left      -                           -                   dpkg-db-backup.timer         dpkg-db-backup.service
+Wed 2026-07-08 00:00:00 UTC 11h left      Tue 2026-07-07 11:34:27 UTC 33min ago           logrotate.timer              logrotate.service
+Sun 2026-07-12 03:10:38 UTC 4 days left   Tue 2026-07-07 11:51:10 UTC 16min ago           e2scrub_all.timer            e2scrub_all.service
+-                           -             -                           -                   fstrim.timer                 fstrim.service
+
+8 timers listed.

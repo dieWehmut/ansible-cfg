@@ -1,0 +1,10 @@
+# command: for d in /etc/nginx /etc/caddy /etc/apache2 /etc/postgresql /etc/mysql /etc/redis /etc/docker /etc/containers /opt /srv /var/www; do [ -e "$d" ] && echo "## $d" && find "$d" -maxdepth 3 -mindepth 1 -printf "%y %p\n" 2>/dev/null | sort | head -300; done
+
+## /etc/docker
+f /etc/docker/key.json
+## /opt
+d /opt/nezha
+d /opt/nezha/agent
+f /opt/nezha/agent/config.yml
+f /opt/nezha/agent/nezha-agent
+## /srv

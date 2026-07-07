@@ -1,0 +1,51 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 103
+  name: Monitor
+  initial_status: stopped
+  final_status: stopped
+  started_for_inventory: true
+  vlan: 60
+  zone: monitor_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.60.2/24
+  observed_address: 192.168.60.2/24
+  gateway: 192.168.60.1
+snapshots: 
+  root: snapshots/lxc/103-Monitor
+  pve_config: snapshots/lxc/103-Monitor/pve-config.txt
+  os_release: snapshots/lxc/103-Monitor/os-release.txt
+  packages: snapshots/lxc/103-Monitor/packages.txt
+  manual_packages: snapshots/lxc/103-Monitor/manual-packages.txt
+  running_services: snapshots/lxc/103-Monitor/running-services.txt
+  enabled_services: snapshots/lxc/103-Monitor/enabled-services.txt
+  listening: snapshots/lxc/103-Monitor/listening.txt
+  docker_containers: snapshots/lxc/103-Monitor/docker-ps.txt
+  config_paths: snapshots/lxc/103-Monitor/config-paths.txt
+counts: 
+  manual_packages: 273
+  installed_packages: 349
+  running_services: 14
+  enabled_services: 19
+  listening_sockets: 12
+  docker_containers: 1
+  docker_images: 1
+observed_service_units: 
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - containerd.service
+  - cron.service
+  - dbus.service
+  - docker.service
+  - netdata.service
+  - nezha-agent-aab2494.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

@@ -10,4 +10,4 @@ os:
 network: 
   address: 192.168.50.14/24
 snapshots: 
-  note: "qemu guest agent reported OS and network only; package snapshot not collected yet"
+  note: "qemu guest agent reported OS and network only; package snapshot not collected in this LXC inventory pass"

@@ -1,0 +1,3 @@
+# command: uname -a 2>/dev/null || true
+
+Linux Navidrome 6.17.13-2-pve #1 SMP PREEMPT_DYNAMIC PMX 6.17.13-2 (2026-03-13T08:06Z) x86_64 GNU/Linux

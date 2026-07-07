@@ -1,0 +1,3 @@
+# command: cat /etc/fstab 2>/dev/null || true
+
+# <file system> <mount point> <type> <options> <dump> <pass>

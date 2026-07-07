@@ -1,0 +1,50 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 115
+  name: Coder
+  initial_status: running
+  final_status: running
+  started_for_inventory: false
+  vlan: 50
+  zone: app_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.50.13/24
+  observed_address: 192.168.50.13/24
+  gateway: 192.168.50.1
+snapshots: 
+  root: snapshots/lxc/115-Coder
+  pve_config: snapshots/lxc/115-Coder/pve-config.txt
+  os_release: snapshots/lxc/115-Coder/os-release.txt
+  packages: snapshots/lxc/115-Coder/packages.txt
+  manual_packages: snapshots/lxc/115-Coder/manual-packages.txt
+  running_services: snapshots/lxc/115-Coder/running-services.txt
+  enabled_services: snapshots/lxc/115-Coder/enabled-services.txt
+  listening: snapshots/lxc/115-Coder/listening.txt
+  docker_containers: null
+  config_paths: snapshots/lxc/115-Coder/config-paths.txt
+counts: 
+  manual_packages: 279
+  installed_packages: 290
+  running_services: 13
+  enabled_services: 17
+  listening_sockets: 8
+  docker_containers: 0
+  docker_images: 0
+observed_service_units: 
+  - coder.service
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - containerd.service
+  - cron.service
+  - dbus.service
+  - docker.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

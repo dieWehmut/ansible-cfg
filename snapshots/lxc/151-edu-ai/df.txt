@@ -1,0 +1,15 @@
+# command: df -hT 2>/dev/null || df -h 2>/dev/null || true
+
+Filesystem                       Type      Size  Used Avail Use% Mounted on
+/dev/mapper/pve-vm--151--disk--0 ext4      256G   66G  180G  27% /
+none                             tmpfs     492K  4.0K  488K   1% /dev
+udev                             devtmpfs   16G     0   16G   0% /dev/tty
+tmpfs                            tmpfs      16G     0   16G   0% /dev/shm
+tmpfs                            tmpfs     6.3G  596K  6.3G   1% /run
+tmpfs                            tmpfs     5.0M     0  5.0M   0% /run/lock
+overlay                          overlay   256G   66G  180G  27% /var/lib/docker/rootfs/overlayfs/76d048ed843a6236eee8cc0d2be0b544b33859584672690c994eb889a54e1302
+overlay                          overlay   256G   66G  180G  27% /var/lib/docker/rootfs/overlayfs/a5193ffd1aef3d1f16855f23cac447764ad13583dadb490923105bcb568111e0
+overlay                          overlay   256G   66G  180G  27% /var/lib/docker/rootfs/overlayfs/41adf4f20d8e5fc99d3e5579eb22f9ca0ddf7ad949c9905e16f73f5797eb0d89
+overlay                          overlay   256G   66G  180G  27% /var/lib/docker/rootfs/overlayfs/de1c92475ea9b02b8bf80695a267391871a9f0163466a7f931803857e00688d1
+overlay                          overlay   256G   66G  180G  27% /var/lib/docker/rootfs/overlayfs/84a29a428a54137cb1fe0218089a9182716056d3858a482a6993b8197e5e8a2b
+overlay                          overlay   256G   66G  180G  27% /var/lib/docker/rootfs/overlayfs/bb2dab330f1fc68687384e8402320afb1de21673840fed0e90e664e5458ea33c

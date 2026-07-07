@@ -1,35 +1,38 @@
 # ansible-cfg
 
-This repository records and will eventually manage guest-internal configuration for non-NixOS Linux machines. It complements `pve-cfg`, which records Proxmox VM/LXC shells, and `nixos-cfg`, which rebuilds the NixOS VM.
+This repository records guest-internal configuration for non-NixOS Linux machines. It complements `pve-cfg`, which records Proxmox VM/LXC shells, and `nixos-cfg`, which rebuilds the NixOS VM.
 
 ## Current Scope
 
-Included now:
+The 2026-07-07 inventory includes every LXC on the PVE host. Containers that were stopped were started one at a time, inspected with read-only commands, and stopped back to their original state.
 
-- Running Debian LXCs discovered through PVE on 2026-07-07.
-- Debian DockerHost VM discovered through qemu guest agent.
-- Read-only snapshots of manual packages, running services, listening ports and Docker containers where available.
+Recorded for each LXC under `snapshots/lxc/<ctid>-<name>/`:
 
-Excluded now:
+- PVE config copy and collection metadata.
+- OS release, hostname, kernel, IP addresses, routes and resolver.
+- Manual packages and full package list.
+- Running services, enabled services, timers and systemd unit file paths.
+- Listening sockets.
+- Filesystem, mounts, fstab, cron and selected config path inventory.
+- Docker containers, images and compose list when Docker is installed.
+- Sanitized OpenWrt UCI output for the OpenWrt LXC.
 
-- NixOS VM: managed by `nixos-cfg`.
-- OpenWrt LXC: network configs are saved in `pve-cfg/openwrt/`.
-- DSM VM: restore from image/PBS or DSM-native backup.
-- Stopped LXCs: only their PVE shell config is recorded in `pve-cfg` until they are started and inspected.
+Excluded from raw capture: private keys and token/password-like key-value fields are redacted. Full disk state and application data are still a PBS/image-backup concern.
 
-## Layout
+## Inventory Groups
 
-- `inventory/hosts.yml`: Ansible inventory generated from observed IPs.
-- `inventory/host_vars/*.yml`: PVE metadata, network placement and snapshot pointers per host.
-- `snapshots/<host>/`: read-only package/service/port snapshots.
-- `playbooks/site.yml`: conservative entrypoint.
-- `roles/`: placeholders for future idempotent roles.
+- `lxc_all`: all LXC snapshots.
+- `lxc_running` / `lxc_stopped`: current state after inventory.
+- `debian_running`: safe default Ansible target for currently running Debian LXCs.
+- `debian_stopped`: Debian LXCs that have snapshots but are not currently running.
+- `docker_lxc`, `bots`, `db_lxc`: convenience groups based on observed services/names.
+- `vm_linux`: Linux VMs discovered outside the LXC pass, currently DockerHost.
 
 ## Usage
 
-The current playbook is intentionally non-destructive. Convert snapshots into roles gradually, then run targeted checks such as:
+The current playbook is intentionally non-destructive and only targets `debian_running` by default. Convert snapshots into roles gradually, then run targeted checks such as:
 
 ```bash
 ansible-inventory --list
-ansible-playbook playbooks/site.yml --check --limit nginx
+ansible-playbook playbooks/site.yml --check --limit lxc_101_nginx
 ```

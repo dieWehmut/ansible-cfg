@@ -1,0 +1,10 @@
+# command: df -hT 2>/dev/null || df -h 2>/dev/null || true
+
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/loop0     ext4      4.9G  1.9G  2.7G  42% /
+none           tmpfs     492K  4.0K  488K   1% /dev
+udev           devtmpfs   16G     0   16G   0% /dev/tty
+tmpfs          tmpfs      16G     0   16G   0% /dev/shm
+tmpfs          tmpfs     6.3G  196K  6.3G   1% /run
+tmpfs          tmpfs     5.0M     0  5.0M   0% /run/lock
+overlay        overlay   4.9G  1.9G  2.7G  42% /var/lib/docker/rootfs/overlayfs/f57c682770bda88af3e9e9b34857c36eaf2367de716b6d1b36e83e1ab1b9de75

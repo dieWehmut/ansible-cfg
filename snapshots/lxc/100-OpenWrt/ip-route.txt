@@ -1,0 +1,18 @@
+# command: ip route 2>/dev/null || route -n 2>/dev/null || true
+
+default dev wg0 proto static scope link 
+10.50.248.87 via 192.168.10.1 dev eth0 proto static 
+192.168.10.0/24 dev eth0 proto kernel scope link src 192.168.10.10 
+192.168.30.0/24 dev eth1.30 proto kernel scope link src 192.168.30.1 
+192.168.40.0/24 dev eth1.40 proto kernel scope link src 192.168.40.1 
+192.168.50.0/24 dev eth1.50 proto kernel scope link src 192.168.50.1 
+192.168.60.0/24 dev eth1.60 proto kernel scope link src 192.168.60.1 
+192.168.66.0/24 dev eth1.66 proto kernel scope link src 192.168.66.1 
+192.168.67.0/24 dev eth1.67 proto kernel scope link src 192.168.67.1 
+192.168.70.0/24 dev eth1.70 proto kernel scope link src 192.168.70.1 
+192.168.80.0/24 dev eth1.80 proto kernel scope link src 192.168.80.1 
+192.168.90.0/24 dev eth1.90 proto kernel scope link src 192.168.90.1 
+192.168.100.0/24 dev eth1.100 proto kernel scope link src 192.168.100.1 
+192.168.110.0/24 dev eth1.110 proto kernel scope link src 192.168.110.1 
+192.168.120.0/24 dev eth1.120 proto kernel scope link src 192.168.120.1 
+192.168.130.0/24 dev eth1.130 proto kernel scope link src 192.168.130.1 

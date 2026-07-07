@@ -1,0 +1,4 @@
+# command: if command -v docker >/dev/null 2>&1; then docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}" 2>/dev/null; fi || true
+
+NAMES         IMAGE                         STATUS                  PORTS
+uptime-kuma   louislam/uptime-kuma:latest   Up 11 hours (healthy)   0.0.0.0:3001->3001/tcp, [::]:3001->3001/tcp

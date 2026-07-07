@@ -1,0 +1,19 @@
+# command: ip -brief address 2>/dev/null || ip addr 2>/dev/null || true
+
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0@if7         UP             192.168.10.10/24 fe80::be24:11ff:fedd:8dd0/64 
+eth1@if16        UP             fe80::be24:11ff:fe2e:e225/64 
+eth1.130@eth1    UP             192.168.130.1/24 fe80::be24:11ff:fe2e:e225/64 
+eth1.50@eth1     UP             192.168.50.1/24 fe80::be24:11ff:fe2e:e225/64 
+eth1.100@eth1    UP             192.168.100.1/24 fe80::be24:11ff:fe2e:e225/64 
+eth1.90@eth1     UP             192.168.90.1/24 fe80::be24:11ff:fe2e:e225/64 
+eth1.110@eth1    UP             192.168.110.1/24 fe80::be24:11ff:fe2e:e225/64 
+eth1.67@eth1     UP             192.168.67.1/24 fe80::be24:11ff:fe2e:e225/64 
+eth1.120@eth1    UP             192.168.120.1/24 fe80::be24:11ff:fe2e:e225/64 
+eth1.70@eth1     UP             192.168.70.1/24 fe80::be24:11ff:fe2e:e225/64 
+eth1.60@eth1     UP             192.168.60.1/24 fe80::be24:11ff:fe2e:e225/64 
+eth1.30@eth1     UP             192.168.30.1/24 fe80::be24:11ff:fe2e:e225/64 
+eth1.80@eth1     UP             192.168.80.1/24 fe80::be24:11ff:fe2e:e225/64 
+eth1.40@eth1     UP             192.168.40.1/24 fe80::be24:11ff:fe2e:e225/64 
+eth1.66@eth1     UP             192.168.66.1/24 fe80::be24:11ff:fe2e:e225/64 
+wg0              UNKNOWN        10.254.254.3/32 

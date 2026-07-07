@@ -1,0 +1,4 @@
+# command: if command -v docker >/dev/null 2>&1; then docker compose ls 2>/dev/null || true; fi; if command -v docker-compose >/dev/null 2>&1; then docker-compose ps 2>/dev/null || true; fi
+
+NAME                STATUS              CONFIG FILES
+sub2api             running(3)          /opt/sub2api/docker-compose.yml

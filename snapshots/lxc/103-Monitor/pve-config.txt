@@ -1,0 +1,12 @@
+
+arch: amd64
+cores: 4
+features: nesting=1
+hostname: Monitor
+memory: 1024
+net0: name=eth0,bridge=vmbr0,firewall=1,gw=192.168.60.1,hwaddr=BC:24:11:EA:B2:23,ip=192.168.60.2/24,tag=60,type=veth
+onboot: 0
+ostype: debian
+rootfs: local-lvm:vm-103-disk-0,size=20G
+swap: 1024
+unprivileged: 1

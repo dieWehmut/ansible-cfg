@@ -1,0 +1,51 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 106
+  name: Coolify
+  initial_status: stopped
+  final_status: stopped
+  started_for_inventory: true
+  vlan: 100
+  zone: cicd_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.100.3/24
+  observed_address: 192.168.100.3/24
+  gateway: 192.168.100.1
+snapshots: 
+  root: snapshots/lxc/106-Coolify
+  pve_config: snapshots/lxc/106-Coolify/pve-config.txt
+  os_release: snapshots/lxc/106-Coolify/os-release.txt
+  packages: snapshots/lxc/106-Coolify/packages.txt
+  manual_packages: snapshots/lxc/106-Coolify/manual-packages.txt
+  running_services: snapshots/lxc/106-Coolify/running-services.txt
+  enabled_services: snapshots/lxc/106-Coolify/enabled-services.txt
+  listening: snapshots/lxc/106-Coolify/listening.txt
+  docker_containers: snapshots/lxc/106-Coolify/docker-ps.txt
+  config_paths: snapshots/lxc/106-Coolify/config-paths.txt
+counts: 
+  manual_packages: 278
+  installed_packages: 297
+  running_services: 14
+  enabled_services: 17
+  listening_sockets: 17
+  docker_containers: 6
+  docker_images: 10
+observed_service_units: 
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - containerd.service
+  - cron.service
+  - dbus.service
+  - docker.service
+  - nezha-agent.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service
+  - user@0.service

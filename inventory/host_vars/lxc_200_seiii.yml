@@ -1,0 +1,51 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 200
+  name: seiii
+  initial_status: stopped
+  final_status: stopped
+  started_for_inventory: true
+  vlan: 67
+  zone: group_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.67.2/24
+  observed_address: 192.168.67.2/24
+  gateway: 192.168.67.1
+snapshots: 
+  root: snapshots/lxc/200-seiii
+  pve_config: snapshots/lxc/200-seiii/pve-config.txt
+  os_release: snapshots/lxc/200-seiii/os-release.txt
+  packages: snapshots/lxc/200-seiii/packages.txt
+  manual_packages: snapshots/lxc/200-seiii/manual-packages.txt
+  running_services: snapshots/lxc/200-seiii/running-services.txt
+  enabled_services: snapshots/lxc/200-seiii/enabled-services.txt
+  listening: snapshots/lxc/200-seiii/listening.txt
+  docker_containers: null
+  config_paths: snapshots/lxc/200-seiii/config-paths.txt
+counts: 
+  manual_packages: 275
+  installed_packages: 897
+  running_services: 14
+  enabled_services: 19
+  listening_sockets: 5
+  docker_containers: 0
+  docker_images: 3
+observed_service_units: 
+  - ai-agent.service
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - containerd.service
+  - cron.service
+  - dbus.service
+  - docker.service
+  - nezha-agent-81071b1.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

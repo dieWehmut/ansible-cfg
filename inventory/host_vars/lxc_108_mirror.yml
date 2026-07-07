@@ -1,0 +1,49 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 108
+  name: Mirror
+  initial_status: stopped
+  final_status: stopped
+  started_for_inventory: true
+  vlan: 30
+  zone: nginx_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.30.3/24
+  observed_address: 192.168.30.3/24
+  gateway: 192.168.30.1
+snapshots: 
+  root: snapshots/lxc/108-Mirror
+  pve_config: snapshots/lxc/108-Mirror/pve-config.txt
+  os_release: snapshots/lxc/108-Mirror/os-release.txt
+  packages: snapshots/lxc/108-Mirror/packages.txt
+  manual_packages: snapshots/lxc/108-Mirror/manual-packages.txt
+  running_services: snapshots/lxc/108-Mirror/running-services.txt
+  enabled_services: snapshots/lxc/108-Mirror/enabled-services.txt
+  listening: snapshots/lxc/108-Mirror/listening.txt
+  docker_containers: null
+  config_paths: snapshots/lxc/108-Mirror/config-paths.txt
+counts: 
+  manual_packages: 269
+  installed_packages: 270
+  running_services: 12
+  enabled_services: 15
+  listening_sockets: 4
+  docker_containers: 0
+  docker_images: 0
+observed_service_units: 
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - cron.service
+  - dbus.service
+  - hubproxy.service
+  - nezha-agent.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

@@ -1,0 +1,21 @@
+# command: for d in /etc/nginx /etc/caddy /etc/apache2 /etc/postgresql /etc/mysql /etc/redis /etc/docker /etc/containers /opt /srv /var/www; do [ -e "$d" ] && echo "## $d" && find "$d" -maxdepth 3 -mindepth 1 -printf "%y %p\n" 2>/dev/null | sort | head -300; done
+
+## /etc/docker
+## /opt
+d /opt/containerd
+d /opt/containerd/bin
+d /opt/containerd/lib
+d /opt/nezha
+d /opt/nezha/agent
+d /opt/uptime-kuma
+d /opt/uptime-kuma/data
+d /opt/uptime-kuma/data/docker-tls
+d /opt/uptime-kuma/data/screenshots
+d /opt/uptime-kuma/data/upload
+f /opt/nezha/agent/config.yml
+f /opt/nezha/agent/nezha-agent
+f /opt/uptime-kuma/data/kuma.db
+f /opt/uptime-kuma/data/kuma.db-shm
+f /opt/uptime-kuma/data/kuma.db-wal
+f /opt/uptime-kuma/docker-compose.yml
+## /srv

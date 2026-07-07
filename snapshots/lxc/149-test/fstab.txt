@@ -1,0 +1,3 @@
+# command: cat /etc/fstab 2>/dev/null || true
+
+# UNCONFIGURED FSTAB FOR BASE SYSTEM

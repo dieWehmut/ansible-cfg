@@ -1,0 +1,16 @@
+# command: df -hT 2>/dev/null || df -h 2>/dev/null || true
+
+Filesystem                       Type      Size  Used Avail Use% Mounted on
+/dev/mapper/pve-vm--106--disk--0 ext4       98G  8.1G   85G   9% /
+none                             tmpfs     492K  4.0K  488K   1% /dev
+udev                             devtmpfs   16G     0   16G   0% /dev/tty
+tmpfs                            tmpfs      16G     0   16G   0% /dev/shm
+tmpfs                            tmpfs     6.3G  624K  6.3G   1% /run
+tmpfs                            tmpfs     5.0M     0  5.0M   0% /run/lock
+overlay                          overlay    98G  8.1G   85G   9% /var/lib/docker/rootfs/overlayfs/cdad86e6d5332b82caeb6e451f65b3a7e326e52c4e99ec2bc0732728ff0a5116
+overlay                          overlay    98G  8.1G   85G   9% /var/lib/docker/rootfs/overlayfs/3664c5b871304ea5565770c32781d9c81b21d7f25da534b409a95c9c80394e1a
+overlay                          overlay    98G  8.1G   85G   9% /var/lib/docker/rootfs/overlayfs/e433ea0aa72bbe14687894d4f445da5d81a4921a77c913c43035afeb3cde5579
+overlay                          overlay    98G  8.1G   85G   9% /var/lib/docker/rootfs/overlayfs/f30b59531ccf6d8209539f9ae9cd551413d28422f1f8c1a63ba227ab14d756c6
+overlay                          overlay    98G  8.1G   85G   9% /var/lib/docker/rootfs/overlayfs/ef528f91dd2467ad05465812a60678908d4becf167fd3e62fbbbea054530bd52
+overlay                          overlay    98G  8.1G   85G   9% /var/lib/docker/rootfs/overlayfs/fe132cbb6d0033c29bd866797c5bcbe58361bbf9b657f2bb843c425e81262dd6
+tmpfs                            tmpfs     3.2G     0  3.2G   0% /run/user/0

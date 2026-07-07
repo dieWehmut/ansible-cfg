@@ -1,0 +1,15 @@
+# command: find /etc/apt -maxdepth 3 -type f \( -name "sources.list" -o -name "*.list" -o -name "*.sources" \) -print -exec sed -n "1,160p" {} \; 2>/dev/null || true
+
+/etc/apt/sources.list.d/gitlab_gitlab-ce.list
+# this file was generated for
+# the repository at https://packages.gitlab.com/gitlab/gitlab-ce/debian/bookworm
+
+deb [signed-by=/etc/apt/keyrings/gitlab_gitlab-ce-archive-keyring.gpg] https://packages.gitlab.com/gitlab/gitlab-ce/debian/bookworm bookworm main
+deb-src [signed-by=/etc/apt/keyrings/gitlab_gitlab-ce-archive-keyring.gpg] https://packages.gitlab.com/gitlab/gitlab-ce/debian/bookworm bookworm main
+/etc/apt/sources.list
+deb http://deb.debian.org/debian bookworm main contrib
+
+deb http://deb.debian.org/debian bookworm-updates main contrib
+
+deb http://security.debian.org bookworm-security main contrib
+

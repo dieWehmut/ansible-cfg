@@ -1,0 +1,11 @@
+
+arch: amd64
+cores: 1
+features: nesting=1
+hostname: MySQL
+memory: 512
+net0: name=eth0,bridge=vmbr0,firewall=1,gw=192.168.90.1,hwaddr=BC:24:11:A0:E9:A8,ip=192.168.90.4/24,tag=90,type=veth
+ostype: debian
+rootfs: local-lvm:vm-302-disk-0,size=10G
+swap: 512
+unprivileged: 1

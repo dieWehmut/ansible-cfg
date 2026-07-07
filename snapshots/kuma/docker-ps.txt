@@ -1,2 +1,0 @@
-NAMES         IMAGE                         STATUS                  PORTS
-uptime-kuma   louislam/uptime-kuma:latest   Up 10 hours (healthy)   0.0.0.0:3001->3001/tcp, [::]:3001->3001/tcp

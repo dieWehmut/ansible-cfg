@@ -1,0 +1,37 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 100
+  name: OpenWrt
+  initial_status: running
+  final_status: running
+  started_for_inventory: false
+  vlan: null
+  zone: null
+os: 
+  id: openwrt
+  pretty_name: "OpenWrt 23.05.3"
+  version_id: 23.05.3
+network: 
+  configured_address: 192.168.10.10/24
+  observed_address: 192.168.10.10/24
+  gateway: 192.168.10.1
+snapshots: 
+  root: snapshots/lxc/100-OpenWrt
+  pve_config: snapshots/lxc/100-OpenWrt/pve-config.txt
+  os_release: snapshots/lxc/100-OpenWrt/os-release.txt
+  packages: snapshots/lxc/100-OpenWrt/packages.txt
+  manual_packages: snapshots/lxc/100-OpenWrt/manual-packages.txt
+  running_services: snapshots/lxc/100-OpenWrt/running-services.txt
+  enabled_services: snapshots/lxc/100-OpenWrt/enabled-services.txt
+  listening: snapshots/lxc/100-OpenWrt/listening.txt
+  docker_containers: null
+  config_paths: snapshots/lxc/100-OpenWrt/config-paths.txt
+counts: 
+  manual_packages: 177
+  installed_packages: 177
+  running_services: 0
+  enabled_services: 0
+  listening_sockets: 80
+  docker_containers: 0
+  docker_images: 0
+observed_service_units: []

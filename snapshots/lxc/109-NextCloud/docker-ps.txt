@@ -1,0 +1,6 @@
+# command: if command -v docker >/dev/null 2>&1; then docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}" 2>/dev/null; fi || true
+
+NAMES             IMAGE              STATUS          PORTS
+nextcloud         nextcloud:latest   Up 14 seconds   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp
+nextcloud-redis   redis:7            Up 14 seconds   6379/tcp
+nextcloud-db      mariadb:11         Up 14 seconds   3306/tcp

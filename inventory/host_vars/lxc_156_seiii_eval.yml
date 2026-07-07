@@ -1,0 +1,50 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 156
+  name: seiii-eval
+  initial_status: stopped
+  final_status: stopped
+  started_for_inventory: true
+  vlan: 50
+  zone: app_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.50.7/24
+  observed_address: 192.168.50.7/24
+  gateway: 192.168.50.1
+snapshots: 
+  root: snapshots/lxc/156-seiii-eval
+  pve_config: snapshots/lxc/156-seiii-eval/pve-config.txt
+  os_release: snapshots/lxc/156-seiii-eval/os-release.txt
+  packages: snapshots/lxc/156-seiii-eval/packages.txt
+  manual_packages: snapshots/lxc/156-seiii-eval/manual-packages.txt
+  running_services: snapshots/lxc/156-seiii-eval/running-services.txt
+  enabled_services: snapshots/lxc/156-seiii-eval/enabled-services.txt
+  listening: snapshots/lxc/156-seiii-eval/listening.txt
+  docker_containers: snapshots/lxc/156-seiii-eval/docker-ps.txt
+  config_paths: snapshots/lxc/156-seiii-eval/config-paths.txt
+counts: 
+  manual_packages: 269
+  installed_packages: 303
+  running_services: 13
+  enabled_services: 17
+  listening_sockets: 6
+  docker_containers: 1
+  docker_images: 4
+observed_service_units: 
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - containerd.service
+  - cron.service
+  - dbus.service
+  - docker.service
+  - nezha-agent.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

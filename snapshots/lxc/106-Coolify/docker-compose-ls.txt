@@ -1,0 +1,6 @@
+# command: if command -v docker >/dev/null 2>&1; then docker compose ls 2>/dev/null || true; fi; if command -v docker-compose >/dev/null 2>&1; then docker-compose ps 2>/dev/null || true; fi
+
+NAME                       STATUS              CONFIG FILES
+coolify-proxy              running(1)          /data/coolify/proxy/docker-compose.yml
+jhbud9ow9jr58r8j5w0s0jjf   running(1)          /artifacts/l143y3winfmkt70ziui0d36l/frontend/docker-compose.yaml
+source                     running(4)          /data/coolify/source/docker-compose.yml,/data/coolify/source/docker-compose.prod.yml

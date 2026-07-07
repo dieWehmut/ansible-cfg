@@ -1,0 +1,12 @@
+
+arch: amd64
+cores: 4
+features: nesting=1
+hostname: Gitlab
+memory: 16384
+net0: name=eth0,bridge=vmbr0,firewall=1,gw=192.168.110.1,hwaddr=BC:24:11:96:C3:A3,ip=192.168.110.2/24,tag=110,type=veth
+onboot: 0
+ostype: debian
+rootfs: local-lvm:vm-105-disk-0,size=100G
+swap: 16384
+unprivileged: 1

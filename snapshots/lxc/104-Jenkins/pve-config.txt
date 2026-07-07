@@ -1,0 +1,12 @@
+
+arch: amd64
+cores: 4
+features: nesting=1
+hostname: Jenkins
+memory: 4096
+net0: name=eth0,bridge=vmbr0,firewall=1,gw=192.168.100.1,hwaddr=BC:24:11:D7:39:E9,ip=192.168.100.2/24,tag=100,type=veth
+onboot: 0
+ostype: debian
+rootfs: local-lvm:vm-104-disk-0,size=200G
+swap: 4096
+unprivileged: 1

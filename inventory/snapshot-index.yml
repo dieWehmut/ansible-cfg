@@ -1,0 +1,235 @@
+generated_at: 2026-07-07
+source: /tmp/lxc-detail-20260707-195954
+lxc_count: 33
+lxc: 
+    - alias: lxc_100_openwrt
+      ctid: 100
+      name: OpenWrt
+      os: "OpenWrt 23.05.3"
+      initial_status: running
+      final_status: running
+      snapshot: snapshots/lxc/100-OpenWrt
+    - alias: lxc_101_nginx
+      ctid: 101
+      name: Nginx
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: running
+      final_status: running
+      snapshot: snapshots/lxc/101-Nginx
+    - alias: lxc_102_tunnel
+      ctid: 102
+      name: Tunnel
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: running
+      final_status: running
+      snapshot: snapshots/lxc/102-Tunnel
+    - alias: lxc_103_monitor
+      ctid: 103
+      name: Monitor
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/103-Monitor
+    - alias: lxc_104_jenkins
+      ctid: 104
+      name: Jenkins
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/104-Jenkins
+    - alias: lxc_105_gitlab
+      ctid: 105
+      name: Gitlab
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/105-Gitlab
+    - alias: lxc_106_coolify
+      ctid: 106
+      name: Coolify
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/106-Coolify
+    - alias: lxc_107_gitea
+      ctid: 107
+      name: Gitea
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/107-Gitea
+    - alias: lxc_108_mirror
+      ctid: 108
+      name: Mirror
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/108-Mirror
+    - alias: lxc_109_nextcloud
+      ctid: 109
+      name: NextCloud
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/109-NextCloud
+    - alias: lxc_110_plex
+      ctid: 110
+      name: Plex
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/110-Plex
+    - alias: lxc_111_navidrome
+      ctid: 111
+      name: Navidrome
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/111-Navidrome
+    - alias: lxc_112_coderunner
+      ctid: 112
+      name: CodeRunner
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: running
+      final_status: running
+      snapshot: snapshots/lxc/112-CodeRunner
+    - alias: lxc_113_kuma
+      ctid: 113
+      name: Kuma
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: running
+      final_status: running
+      snapshot: snapshots/lxc/113-Kuma
+    - alias: lxc_114_vscode
+      ctid: 114
+      name: VSCode
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/114-VSCode
+    - alias: lxc_115_coder
+      ctid: 115
+      name: Coder
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: running
+      final_status: running
+      snapshot: snapshots/lxc/115-Coder
+    - alias: lxc_146_tyz
+      ctid: 146
+      name: tyz
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/146-tyz
+    - alias: lxc_147_lyf
+      ctid: 147
+      name: lyf
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/147-lyf
+    - alias: lxc_148_sty
+      ctid: 148
+      name: sty
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/148-sty
+    - alias: lxc_149_test
+      ctid: 149
+      name: test
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/149-test
+    - alias: lxc_150_monogatari
+      ctid: 150
+      name: Monogatari
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/150-Monogatari
+    - alias: lxc_151_edu_ai
+      ctid: 151
+      name: edu-ai
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/151-edu-ai
+    - alias: lxc_152_bot_diesw
+      ctid: 152
+      name: bot-diesw
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: running
+      final_status: running
+      snapshot: snapshots/lxc/152-bot-diesw
+    - alias: lxc_153_bot_desuwa
+      ctid: 153
+      name: bot-desuwa
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: running
+      final_status: running
+      snapshot: snapshots/lxc/153-bot-desuwa
+    - alias: lxc_154_pan
+      ctid: 154
+      name: pan
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/154-pan
+    - alias: lxc_155_literaturereview
+      ctid: 155
+      name: LiteratureReview
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/155-LiteratureReview
+    - alias: lxc_156_seiii_eval
+      ctid: 156
+      name: seiii-eval
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/156-seiii-eval
+    - alias: lxc_157_codexmanager
+      ctid: 157
+      name: CodexManager
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/157-CodexManager
+    - alias: lxc_158_sub2api
+      ctid: 158
+      name: sub2api
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/158-sub2api
+    - alias: lxc_200_seiii
+      ctid: 200
+      name: seiii
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/200-seiii
+    - alias: lxc_300_postgresql
+      ctid: 300
+      name: PostgreSQL
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/300-PostgreSQL
+    - alias: lxc_301_redis
+      ctid: 301
+      name: Redis
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/301-Redis
+    - alias: lxc_302_mysql
+      ctid: 302
+      name: MySQL
+      os: "Debian GNU/Linux 12 (bookworm)"
+      initial_status: stopped
+      final_status: stopped
+      snapshot: snapshots/lxc/302-MySQL

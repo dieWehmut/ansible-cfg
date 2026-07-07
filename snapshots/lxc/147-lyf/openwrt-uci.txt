@@ -1,0 +1,2 @@
+# command: if command -v uci >/dev/null 2>&1; then uci show network 2>/dev/null; uci show dhcp 2>/dev/null; uci show firewall 2>/dev/null; fi || true
+

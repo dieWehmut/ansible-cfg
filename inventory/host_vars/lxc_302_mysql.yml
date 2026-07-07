@@ -1,0 +1,49 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 302
+  name: MySQL
+  initial_status: stopped
+  final_status: stopped
+  started_for_inventory: true
+  vlan: 90
+  zone: db_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.90.4/24
+  observed_address: 192.168.90.4/24
+  gateway: 192.168.90.1
+snapshots: 
+  root: snapshots/lxc/302-MySQL
+  pve_config: snapshots/lxc/302-MySQL/pve-config.txt
+  os_release: snapshots/lxc/302-MySQL/os-release.txt
+  packages: snapshots/lxc/302-MySQL/packages.txt
+  manual_packages: snapshots/lxc/302-MySQL/manual-packages.txt
+  running_services: snapshots/lxc/302-MySQL/running-services.txt
+  enabled_services: snapshots/lxc/302-MySQL/enabled-services.txt
+  listening: snapshots/lxc/302-MySQL/listening.txt
+  docker_containers: null
+  config_paths: snapshots/lxc/302-MySQL/config-paths.txt
+counts: 
+  manual_packages: 269
+  installed_packages: 316
+  running_services: 12
+  enabled_services: 15
+  listening_sockets: 4
+  docker_containers: 0
+  docker_images: 0
+observed_service_units: 
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - cron.service
+  - dbus.service
+  - mariadb.service
+  - nezha-agent.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

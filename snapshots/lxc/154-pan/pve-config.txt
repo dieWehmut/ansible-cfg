@@ -1,0 +1,12 @@
+
+arch: amd64
+cores: 1
+features: nesting=1
+hostname: pan
+memory: 256
+net0: name=eth0,bridge=vmbr0,firewall=1,gw=192.168.80.1,hwaddr=BC:24:11:E0:8A:0B,ip=192.168.80.3/24,tag=80,type=veth
+onboot: 0
+ostype: debian
+rootfs: local-lvm:vm-154-disk-0,size=10G
+swap: 256
+unprivileged: 1

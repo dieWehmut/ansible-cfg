@@ -1,0 +1,12 @@
+
+arch: amd64
+cores: 2
+features: nesting=1
+hostname: seiii
+memory: 4096
+net0: name=eth0,bridge=vmbr0,firewall=1,gw=192.168.67.1,hwaddr=BC:24:11:92:90:28,ip=192.168.67.2/24,tag=67,type=veth
+onboot: 0
+ostype: debian
+rootfs: local-lvm:vm-200-disk-0,size=50G
+swap: 4096
+unprivileged: 1

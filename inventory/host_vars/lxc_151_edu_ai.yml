@@ -1,0 +1,50 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 151
+  name: edu-ai
+  initial_status: stopped
+  final_status: stopped
+  started_for_inventory: true
+  vlan: 50
+  zone: app_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.50.3/24
+  observed_address: 192.168.50.3/24
+  gateway: 192.168.50.1
+snapshots: 
+  root: snapshots/lxc/151-edu-ai
+  pve_config: snapshots/lxc/151-edu-ai/pve-config.txt
+  os_release: snapshots/lxc/151-edu-ai/os-release.txt
+  packages: snapshots/lxc/151-edu-ai/packages.txt
+  manual_packages: snapshots/lxc/151-edu-ai/manual-packages.txt
+  running_services: snapshots/lxc/151-edu-ai/running-services.txt
+  enabled_services: snapshots/lxc/151-edu-ai/enabled-services.txt
+  listening: snapshots/lxc/151-edu-ai/listening.txt
+  docker_containers: snapshots/lxc/151-edu-ai/docker-ps.txt
+  config_paths: snapshots/lxc/151-edu-ai/config-paths.txt
+counts: 
+  manual_packages: 306
+  installed_packages: 455
+  running_services: 13
+  enabled_services: 17
+  listening_sockets: 7
+  docker_containers: 6
+  docker_images: 66
+observed_service_units: 
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - containerd.service
+  - cron.service
+  - dbus.service
+  - docker.service
+  - nezha-agent.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

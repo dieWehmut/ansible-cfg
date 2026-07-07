@@ -1,9 +1,0 @@
-Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
-udp   UNCONN 0      0            0.0.0.0:50953      0.0.0.0:*    users:(("coder",pid=143,fd=16))
-udp   UNCONN 0      0               [::]:52534         [::]:*    users:(("coder",pid=143,fd=15))
-tcp   LISTEN 0      100        127.0.0.1:25         0.0.0.0:*    users:(("master",pid=296,fd=13))
-tcp   LISTEN 0      244        127.0.0.1:32813      0.0.0.0:*    users:(("postgres",pid=506,fd=8))
-tcp   LISTEN 0      100            [::1]:25            [::]:*    users:(("master",pid=296,fd=14))
-tcp   LISTEN 0      244            [::1]:32813         [::]:*    users:(("postgres",pid=506,fd=7))
-tcp   LISTEN 0      4096               *:22               *:*    users:(("sshd",pid=136,fd=3),("systemd",pid=1,fd=40))
-tcp   LISTEN 0      4096               *:3000             *:*    users:(("coder",pid=143,fd=4))

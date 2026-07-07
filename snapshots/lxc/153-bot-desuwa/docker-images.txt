@@ -1,0 +1,2 @@
+# command: if command -v docker >/dev/null 2>&1; then docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}\t{{.Size}}" 2>/dev/null; fi || true
+

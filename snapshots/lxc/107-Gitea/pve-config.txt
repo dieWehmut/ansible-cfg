@@ -1,0 +1,12 @@
+
+arch: amd64
+cores: 2
+features: nesting=1
+hostname: Gitea
+memory: 4096
+net0: name=eth0,bridge=vmbr0,firewall=1,gw=192.168.110.1,hwaddr=BC:24:11:5D:FA:9C,ip=192.168.110.3/24,tag=110,type=veth
+onboot: 0
+ostype: debian
+rootfs: local-lvm:vm-107-disk-0,size=50G
+swap: 4096
+unprivileged: 1

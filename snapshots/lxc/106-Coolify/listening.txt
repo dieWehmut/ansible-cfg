@@ -1,0 +1,20 @@
+# command: ss -lntup 2>/dev/null || netstat -lntup 2>/dev/null || true
+
+Netid State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess                                               
+udp   UNCONN 0      0            0.0.0.0:443       0.0.0.0:*    users:(("docker-proxy",pid=932,fd=8))                
+udp   UNCONN 0      0               [::]:443          [::]:*    users:(("docker-proxy",pid=939,fd=8))                
+tcp   LISTEN 0      4096         0.0.0.0:8000      0.0.0.0:*    users:(("docker-proxy",pid=1060,fd=8))               
+tcp   LISTEN 0      100        127.0.0.1:25        0.0.0.0:*    users:(("master",pid=310,fd=13))                     
+tcp   LISTEN 0      4096         0.0.0.0:8080      0.0.0.0:*    users:(("docker-proxy",pid=958,fd=8))                
+tcp   LISTEN 0      4096         0.0.0.0:6002      0.0.0.0:*    users:(("docker-proxy",pid=1022,fd=8))               
+tcp   LISTEN 0      4096         0.0.0.0:6001      0.0.0.0:*    users:(("docker-proxy",pid=997,fd=8))                
+tcp   LISTEN 0      4096         0.0.0.0:443       0.0.0.0:*    users:(("docker-proxy",pid=906,fd=8))                
+tcp   LISTEN 0      4096         0.0.0.0:80        0.0.0.0:*    users:(("docker-proxy",pid=832,fd=8))                
+tcp   LISTEN 0      4096            [::]:8000         [::]:*    users:(("docker-proxy",pid=1067,fd=8))               
+tcp   LISTEN 0      4096            [::]:8080         [::]:*    users:(("docker-proxy",pid=964,fd=8))                
+tcp   LISTEN 0      4096            [::]:6002         [::]:*    users:(("docker-proxy",pid=1029,fd=8))               
+tcp   LISTEN 0      4096            [::]:6001         [::]:*    users:(("docker-proxy",pid=1003,fd=8))               
+tcp   LISTEN 0      100            [::1]:25           [::]:*    users:(("master",pid=310,fd=14))                     
+tcp   LISTEN 0      4096            [::]:443          [::]:*    users:(("docker-proxy",pid=913,fd=8))                
+tcp   LISTEN 0      4096               *:22              *:*    users:(("sshd",pid=138,fd=3),("systemd",pid=1,fd=40))
+tcp   LISTEN 0      4096            [::]:80           [::]:*    users:(("docker-proxy",pid=887,fd=8))                

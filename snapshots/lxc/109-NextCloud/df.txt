@@ -1,0 +1,12 @@
+# command: df -hT 2>/dev/null || df -h 2>/dev/null || true
+
+Filesystem                       Type      Size  Used Avail Use% Mounted on
+/dev/mapper/pve-vm--109--disk--0 ext4       49G  4.9G   42G  11% /
+none                             tmpfs     492K  4.0K  488K   1% /dev
+udev                             devtmpfs   16G     0   16G   0% /dev/tty
+tmpfs                            tmpfs      16G     0   16G   0% /dev/shm
+tmpfs                            tmpfs     6.3G  356K  6.3G   1% /run
+tmpfs                            tmpfs     5.0M     0  5.0M   0% /run/lock
+overlay                          overlay    49G  4.9G   42G  11% /var/lib/docker/rootfs/overlayfs/ee251eb95369a4da3e43d1023e7cb985fb9f3d810c8c4d2acd436849caac3a11
+overlay                          overlay    49G  4.9G   42G  11% /var/lib/docker/rootfs/overlayfs/a97502e8d6632e364d466cb95d81a8e955f34c19f2924a6ffe4a428fca0e29c7
+overlay                          overlay    49G  4.9G   42G  11% /var/lib/docker/rootfs/overlayfs/bc3e43dd522dc752b494881b87d080aebdeb77ef06a3e1b507e9fe7273a7a761

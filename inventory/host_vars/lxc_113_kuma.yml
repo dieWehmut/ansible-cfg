@@ -1,0 +1,50 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 113
+  name: Kuma
+  initial_status: running
+  final_status: running
+  started_for_inventory: false
+  vlan: 60
+  zone: monitor_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.60.3/24
+  observed_address: 192.168.60.3/24
+  gateway: 192.168.60.1
+snapshots: 
+  root: snapshots/lxc/113-Kuma
+  pve_config: snapshots/lxc/113-Kuma/pve-config.txt
+  os_release: snapshots/lxc/113-Kuma/os-release.txt
+  packages: snapshots/lxc/113-Kuma/packages.txt
+  manual_packages: snapshots/lxc/113-Kuma/manual-packages.txt
+  running_services: snapshots/lxc/113-Kuma/running-services.txt
+  enabled_services: snapshots/lxc/113-Kuma/enabled-services.txt
+  listening: snapshots/lxc/113-Kuma/listening.txt
+  docker_containers: snapshots/lxc/113-Kuma/docker-ps.txt
+  config_paths: snapshots/lxc/113-Kuma/config-paths.txt
+counts: 
+  manual_packages: 277
+  installed_packages: 288
+  running_services: 13
+  enabled_services: 17
+  listening_sockets: 5
+  docker_containers: 1
+  docker_images: 1
+observed_service_units: 
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - containerd.service
+  - cron.service
+  - dbus.service
+  - docker.service
+  - nezha-agent.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

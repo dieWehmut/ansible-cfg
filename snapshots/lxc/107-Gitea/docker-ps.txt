@@ -1,0 +1,4 @@
+# command: if command -v docker >/dev/null 2>&1; then docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}" 2>/dev/null; fi || true
+
+NAMES     IMAGE                STATUS          PORTS
+gitea     gitea/gitea:latest   Up 14 seconds   0.0.0.0:3000->3000/tcp, :::3000->3000/tcp, 0.0.0.0:2222->22/tcp, :::2222->22/tcp

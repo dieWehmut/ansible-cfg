@@ -1,0 +1,2 @@
+# command: find /etc/systemd/system -maxdepth 4 \( -type f -name "*.service" -o -type f -name "*.timer" \) 2>/dev/null | sort || true
+

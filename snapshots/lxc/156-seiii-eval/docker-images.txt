@@ -1,0 +1,7 @@
+# command: if command -v docker >/dev/null 2>&1; then docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}\t{{.Size}}" 2>/dev/null; fi || true
+
+REPOSITORY           TAG       IMAGE ID       SIZE
+seiii-eval-backend   13        6318b1bcccb0   1.34GB
+seiii-eval-backend   14        6318b1bcccb0   1.34GB
+seiii-eval-backend   18        6318b1bcccb0   1.34GB
+seiii-eval-backend   9         6318b1bcccb0   1.34GB

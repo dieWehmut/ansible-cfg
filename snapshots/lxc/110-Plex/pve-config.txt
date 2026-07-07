@@ -1,0 +1,11 @@
+
+arch: amd64
+cores: 2
+features: nesting=1
+hostname: Plex
+memory: 4096
+net0: name=eth0,bridge=vmbr0,firewall=1,gw=192.168.120.1,hwaddr=BC:24:11:30:75:04,ip=192.168.120.2/24,tag=120,type=veth
+ostype: debian
+rootfs: local-lvm:vm-110-disk-0,size=9G
+swap: 4096
+unprivileged: 1

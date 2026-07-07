@@ -1,0 +1,48 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 148
+  name: sty
+  initial_status: stopped
+  final_status: stopped
+  started_for_inventory: true
+  vlan: 66
+  zone: user_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.66.3/24
+  observed_address: 192.168.66.3/24
+  gateway: 192.168.66.1
+snapshots: 
+  root: snapshots/lxc/148-sty
+  pve_config: snapshots/lxc/148-sty/pve-config.txt
+  os_release: snapshots/lxc/148-sty/os-release.txt
+  packages: snapshots/lxc/148-sty/packages.txt
+  manual_packages: snapshots/lxc/148-sty/manual-packages.txt
+  running_services: snapshots/lxc/148-sty/running-services.txt
+  enabled_services: snapshots/lxc/148-sty/enabled-services.txt
+  listening: snapshots/lxc/148-sty/listening.txt
+  docker_containers: null
+  config_paths: snapshots/lxc/148-sty/config-paths.txt
+counts: 
+  manual_packages: 270
+  installed_packages: 284
+  running_services: 11
+  enabled_services: 14
+  listening_sockets: 3
+  docker_containers: 0
+  docker_images: 0
+observed_service_units: 
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - cron.service
+  - dbus.service
+  - nezha-agent.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

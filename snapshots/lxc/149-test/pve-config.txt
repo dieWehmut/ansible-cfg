@@ -1,0 +1,12 @@
+
+arch: amd64
+cores: 1
+features: nesting=1
+hostname: test
+memory: 512
+net0: name=eth0,bridge=vmbr0,firewall=1,gw=192.168.66.1,hwaddr=BC:24:11:97:5F:ED,ip=192.168.66.2/24,tag=66,type=veth
+onboot: 0
+ostype: debian
+rootfs: local-lvm:vm-149-disk-0,size=5G
+swap: 512
+unprivileged: 1

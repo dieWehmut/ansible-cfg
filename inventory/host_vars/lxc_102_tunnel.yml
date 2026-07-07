@@ -1,0 +1,50 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 102
+  name: Tunnel
+  initial_status: running
+  final_status: running
+  started_for_inventory: false
+  vlan: 40
+  zone: tunnel_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.40.2/24
+  observed_address: 192.168.40.2/24
+  gateway: 192.168.40.1
+snapshots: 
+  root: snapshots/lxc/102-Tunnel
+  pve_config: snapshots/lxc/102-Tunnel/pve-config.txt
+  os_release: snapshots/lxc/102-Tunnel/os-release.txt
+  packages: snapshots/lxc/102-Tunnel/packages.txt
+  manual_packages: snapshots/lxc/102-Tunnel/manual-packages.txt
+  running_services: snapshots/lxc/102-Tunnel/running-services.txt
+  enabled_services: snapshots/lxc/102-Tunnel/enabled-services.txt
+  listening: snapshots/lxc/102-Tunnel/listening.txt
+  docker_containers: null
+  config_paths: snapshots/lxc/102-Tunnel/config-paths.txt
+counts: 
+  manual_packages: 270
+  installed_packages: 271
+  running_services: 13
+  enabled_services: 16
+  listening_sockets: 4
+  docker_containers: 0
+  docker_images: 0
+observed_service_units: 
+  - cloudflared.service
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - cron.service
+  - dbus.service
+  - nezha-agent-69e0634.service
+  - nezha-agent.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

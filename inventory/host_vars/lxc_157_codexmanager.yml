@@ -1,0 +1,52 @@
+pve: 
+  host: dieSehnsucht
+  ctid: 157
+  name: CodexManager
+  initial_status: stopped
+  final_status: stopped
+  started_for_inventory: true
+  vlan: 50
+  zone: app_zone
+os: 
+  id: debian
+  pretty_name: "Debian GNU/Linux 12 (bookworm)"
+  version_id: 12
+network: 
+  configured_address: 192.168.50.9/24
+  observed_address: 192.168.50.9/24
+  gateway: 192.168.50.1
+snapshots: 
+  root: snapshots/lxc/157-CodexManager
+  pve_config: snapshots/lxc/157-CodexManager/pve-config.txt
+  os_release: snapshots/lxc/157-CodexManager/os-release.txt
+  packages: snapshots/lxc/157-CodexManager/packages.txt
+  manual_packages: snapshots/lxc/157-CodexManager/manual-packages.txt
+  running_services: snapshots/lxc/157-CodexManager/running-services.txt
+  enabled_services: snapshots/lxc/157-CodexManager/enabled-services.txt
+  listening: snapshots/lxc/157-CodexManager/listening.txt
+  docker_containers: null
+  config_paths: snapshots/lxc/157-CodexManager/config-paths.txt
+counts: 
+  manual_packages: 280
+  installed_packages: 306
+  running_services: 15
+  enabled_services: 19
+  listening_sockets: 9
+  docker_containers: 0
+  docker_images: 0
+observed_service_units: 
+  - codexmanager.service
+  - console-getty.service
+  - container-getty@1.service
+  - container-getty@2.service
+  - containerd.service
+  - cron.service
+  - dbus.service
+  - docker.service
+  - nezha-agent.service
+  - nginx.service
+  - postfix@-.service
+  - ssh.service
+  - systemd-journald.service
+  - systemd-logind.service
+  - systemd-networkd.service

@@ -1,0 +1,9 @@
+# command: if command -v docker >/dev/null 2>&1; then docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}" 2>/dev/null; fi || true
+
+NAMES                                   IMAGE                                                               STATUS                    PORTS
+jhbud9ow9jr58r8j5w0s0jjf-123525770132   jhbud9ow9jr58r8j5w0s0jjf:fec01ba0810a345a7ae379b82e4bd097f884256a   Up 14 seconds             80/tcp
+coolify-proxy                           traefik:v3.6                                                        Up 14 seconds (healthy)   0.0.0.0:80->80/tcp, [::]:80->80/tcp, 0.0.0.0:443->443/tcp, [::]:443->443/tcp, 0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp, 0.0.0.0:443->443/udp, [::]:443->443/udp
+coolify                                 ghcr.io/coollabsio/coolify:4.0.0                                    Up 14 seconds (healthy)   8000/tcp, 8443/tcp, 9000/tcp, 0.0.0.0:8000->8080/tcp, [::]:8000->8080/tcp
+coolify-db                              postgres:15-alpine                                                  Up 14 seconds (healthy)   5432/tcp
+coolify-redis                           redis:7-alpine                                                      Up 14 seconds (healthy)   6379/tcp
+coolify-realtime                        ghcr.io/coollabsio/coolify-realtime:1.0.13                          Up 14 seconds (healthy)   0.0.0.0:6001-6002->6001-6002/tcp, [::]:6001-6002->6001-6002/tcp

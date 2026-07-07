@@ -1,0 +1,4 @@
+# command: if command -v docker >/dev/null 2>&1; then docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}\t{{.Size}}" 2>/dev/null; fi || true
+
+REPOSITORY                                                  TAG       IMAGE ID       SIZE
+registry.cn-shanghai.aliyuncs.com/naibahq/nezha-dashboard   latest    9f23c198dc32   94.7MB

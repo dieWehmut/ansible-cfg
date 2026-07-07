@@ -1,12 +1,12 @@
 ---
-- name: Baseline non-NixOS Linux guests
-  hosts: debian
+- name: Baseline running Debian LXCs
+  hosts: debian_running
   gather_facts: true
   roles:
     - role: common
 
-- name: Docker-capable guests
-  hosts: docker
+- name: Docker-capable running LXCs
+  hosts: docker_running
   gather_facts: true
   roles:
     - role: docker
